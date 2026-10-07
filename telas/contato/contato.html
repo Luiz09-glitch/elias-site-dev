@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Contato do Colégio Estadual Cívico-Militar Elias Abrahão: endereço, telefone, e-mail e formulário de mensagem." />
+  <title>Contato - Colégio Elias Abrahão</title>
+  <link rel="icon" href="../../imagens/logocivico.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header>
+    <div id="container_header">
+      <a id="esq_header" href="../../index.html">
+        <img id="logo" src="../../imagens/logocivico.png" alt="Brasão do Colégio Cívico-Militar do Paraná" width="270"
+          height="270" />
+      </a>
+      <div id="dir_header">
+        <p class="sobretitulo">Colégio Cívico-Militar do Paraná</p>
+        <h1>Colégio Estadual Cívico-Militar Elias Abrahão</h1>
+        <p class="subtitulo">Ensino Fundamental, Médio e Profissional</p>
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Principal">
+    <ul>
+      <li><a href="../../index.html">Início</a></li>
+      <li><a href="../cursos/cursos.html">Cursos</a></li>
+      <li><a href="../alunos/aluno.html">Alunos</a></li>
+      <li><a href="contato.html" aria-current="page">Contato</a></li>
+      <li><a href="../historia/historia.html">História</a></li>
+    </ul>
+  </nav>
+
+  <main id="conteudo">
+    <section class="pagina_topo">
+      <p class="rotulo">Fale conosco</p>
+      <h2>Contato</h2>
+      <div class="divisa" aria-hidden="true"><span></span></div>
+      <p>
+        Tire suas dúvidas sobre matrículas, cursos e documentos com a
+        secretaria do colégio.
+      </p>
+    </section>
+
+    <section class="contato">
+      <!-- Trocar os trechos marcados em amarelo pelos dados reais do colégio -->
+      <ul class="contato_info">
+        <li class="cartao">
+          <h3>Endereço</h3>
+          <p>Rua Angelo Chilante, 15<br />Jardim Menino Deus<br />Quatro Barras - PR</p>
+        </li>
+        <li class="cartao">
+          <h3>Telefone</h3>
+          <p><mark class="preencher">(41) 0000-0000</mark></p>
+        </li>
+        <li class="cartao">
+          <h3>E-mail</h3>
+          <p><mark class="preencher">email@escola.pr.gov.br</mark></p>
+        </li>
+        <li class="cartao">
+          <h3>Atendimento da secretaria</h3>
+          <p><mark class="preencher">Segunda a sexta, das 00h às 00h</mark></p>
+        </li>
+      </ul>
+
+      <!-- Sem servidor, o formulário abre o programa de e-mail do visitante.
+           Coloque o e-mail do colégio depois de "mailto:" -->
+      <form class="formulario" action="mailto:" method="post" enctype="text/plain">
+        <h3>Envie uma mensagem</h3>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" autocomplete="name" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" autocomplete="email" required />
+
+        <label for="assunto">Assunto</label>
+        <select id="assunto" name="assunto">
+          <option>Matrícula</option>
+          <option>Cursos técnicos</option>
+          <option>Documentos</option>
+          <option>Outro assunto</option>
+        </select>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button class="botao" type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+
+    <section class="mapa">
+      <h2>Como chegar</h2>
+      <iframe title="Mapa com a localização do colégio"
+        src="https://www.google.com/maps?q=Rua+Angelo+Chilante,+15,+Quatro+Barras+-+PR&output=embed" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rodape_conteudo">
+      <img class="rodape_logo" src="../../imagens/logocivico.png" alt="" width="270" height="270" />
+      <div>
+        <p class="rodape_nome">
+          Colégio Estadual Cívico-Militar Elias Abrahão
+        </p>
+        <p>
+          Rua Angelo Chilante, 15 — Jardim Menino Deus, Quatro Barras - PR
+        </p>
+      </div>
+    </div>
+    <p class="rodape_credito">
+      Desenvolvido por Alunos do Técnico em Desenvolvimento de Sistemas
+    </p>
+  </footer>
+</body>
+
+</html>

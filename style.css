@@ -287,8 +287,9 @@ nav a[aria-current="page"] {
     color: var(--marinho);
 }
 
-/* Sobre o colégio (foto + texto) */
-#sobre {
+/* Sobre o colégio (foto + texto) — também usado na página de história */
+#sobre,
+#historia {
     background-color: var(--branco);
     border-top: 1px solid var(--linha);
     border-bottom: 1px solid var(--linha);
@@ -495,6 +496,300 @@ nav a[aria-current="page"] {
 }
 
 /* =========================================================
+   6.1 Páginas internas (cursos, história e contato)
+   ========================================================= */
+
+/* Título no topo de cada página */
+.pagina_topo {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 2.5rem;
+    text-align: center;
+    animation: surgir 0.8s ease both;
+}
+
+.pagina_topo h2 {
+    font-size: clamp(1.9rem, 4.6vw, 3rem);
+    margin-top: 0.6rem;
+}
+
+.pagina_topo .divisa {
+    margin: 1.25rem 0 1.5rem;
+}
+
+.pagina_topo > p:last-child {
+    color: var(--texto-suave);
+}
+
+/* Texto que ainda precisa ser trocado pela informação real */
+mark.preencher {
+    background-color: #fdf3d6;
+    color: var(--texto);
+    border: 1px dashed var(--dourado);
+    border-radius: 4px;
+    padding: 0 0.3rem;
+}
+
+/* Cursos */
+.cursos {
+    max-width: var(--largura);
+    margin: 0 auto;
+    padding: 0 1.5rem 4.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    animation: surgir 0.8s 0.15s ease both;
+}
+
+.curso {
+    background-color: var(--branco);
+    border: 1px solid var(--linha);
+    border-top: 4px solid var(--oliva);
+    border-radius: var(--raio);
+    padding: 1.75rem 1.6rem;
+    box-shadow: var(--sombra);
+    scroll-margin-top: 4rem;
+    transition: transform 0.25s ease;
+}
+
+.curso:hover {
+    transform: translateY(-4px);
+}
+
+.curso_sigla {
+    display: inline-grid;
+    place-items: center;
+    min-width: 56px;
+    height: 56px;
+    padding: 0 0.6rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background-color: var(--marinho);
+    color: var(--dourado);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+}
+
+.curso h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.curso_resumo {
+    color: var(--texto-suave);
+    margin-bottom: 1.25rem;
+}
+
+.curso h4 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--oliva-escuro);
+    margin: 1.25rem 0 0.5rem;
+}
+
+.curso ul {
+    list-style: none;
+}
+
+.curso li {
+    position: relative;
+    padding-left: 1.2rem;
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+/* Divisa pequena no lugar da bolinha da lista */
+.curso li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid var(--oliva);
+    border-bottom: 2px solid var(--oliva);
+    transform: rotate(-45deg);
+}
+
+.curso h4 + p {
+    font-size: 0.98rem;
+    color: var(--texto-suave);
+}
+
+/* Faixa de chamada para contato */
+.chamada {
+    background-color: var(--marinho);
+    color: #d7dde4;
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+}
+
+.chamada h2 {
+    color: var(--branco);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 0.5rem;
+}
+
+.chamada p {
+    margin-bottom: 1.75rem;
+}
+
+.chamada .botao:hover {
+    background-color: var(--oliva);
+}
+
+/* História: linha do tempo */
+.linha_tempo_secao {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 5rem;
+}
+
+.linha_tempo_secao > h2 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    margin: 0.4rem 0 2.5rem;
+}
+
+.linha_tempo {
+    list-style: none;
+    border-left: 3px solid var(--oliva);
+    margin-left: 0.5rem;
+}
+
+.linha_tempo li {
+    position: relative;
+    padding: 0 0 2.25rem 2rem;
+}
+
+.linha_tempo li:last-child {
+    padding-bottom: 0;
+}
+
+/* Marcador redondo em cada item */
+.linha_tempo li::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 0.35rem;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: var(--dourado);
+    border: 4px solid var(--papel);
+    box-shadow: 0 0 0 2px var(--oliva);
+}
+
+.linha_ano {
+    font-weight: 700;
+    color: var(--oliva-escuro);
+    letter-spacing: 0.06em;
+}
+
+.linha_tempo h3 {
+    font-size: 1.25rem;
+    margin: 0.2rem 0 0.3rem;
+}
+
+.linha_tempo p {
+    color: var(--texto-suave);
+}
+
+/* Contato */
+.contato {
+    max-width: var(--largura);
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem;
+    align-items: start;
+    animation: surgir 0.8s 0.15s ease both;
+}
+
+.contato_info {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.formulario {
+    background-color: var(--branco);
+    border: 1px solid var(--linha);
+    border-top: 4px solid var(--oliva);
+    border-radius: var(--raio);
+    padding: 1.75rem;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario h3 {
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+}
+
+.formulario label {
+    font-weight: 600;
+    margin: 0.75rem 0 0.3rem;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    font: inherit;
+    color: var(--texto);
+    background-color: var(--papel);
+    border: 1px solid var(--linha);
+    border-radius: 8px;
+    padding: 0.65rem 0.8rem;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario input:focus-visible,
+.formulario select:focus-visible,
+.formulario textarea:focus-visible,
+.formulario button:focus-visible {
+    outline: 3px solid var(--dourado);
+    outline-offset: 2px;
+}
+
+.formulario .botao {
+    align-self: flex-start;
+    margin-top: 1.5rem;
+    border: none;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.mapa {
+    max-width: var(--largura);
+    margin: 0 auto;
+    padding: 0 1.5rem 5rem;
+}
+
+.mapa h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1.25rem;
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    height: 380px;
+    border: 1px solid var(--linha);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+/* =========================================================
    7. Rodapé
    ========================================================= */
 footer {
@@ -578,6 +873,11 @@ footer {
     #perfil_comentarios {
         grid-column: 1 / -1;
     }
+
+    .cursos,
+    .contato {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 640px) {
@@ -615,8 +915,25 @@ footer {
     }
 
     #sobre,
+    #historia,
     #estrutura {
         padding: 3rem 1.25rem;
+    }
+
+    .pagina_topo {
+        padding: 3rem 1.25rem 2rem;
+    }
+
+    .cursos,
+    .contato,
+    .mapa,
+    .linha_tempo_secao {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .mapa iframe {
+        height: 300px;
     }
 
     .moldura {
