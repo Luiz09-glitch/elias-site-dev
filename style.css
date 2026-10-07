@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+#container_header{
+    background-color: rgb(28, 128, 128); 
+    display: flex;
+}
+#esq_header{
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+#dir_header{
+    width: 80%;
+    padding: 15px 0px 0px;
+    color: white;
+    font-family: "Oldenburg", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#logo{
+    width: 45%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(2, 112, 112);
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: aliceblue;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Oldenburg", serif;
+    font-style: normal;
+}
+
+li a:hover{
+    background-color: rgb(162, 162, 231);
+    color: antiquewhite;
+}
+
+#slogan{
+    text-align: center;
+    padding: 20px 0px 0px;
+}
+
+#fraseslogan{
+    font-family: "Oldenburg", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#duascolunas{
+    display: flex;
+}
+#imagem{
+    padding: 30px 60px 0px;
+}
+
+#imgcolegio{
+    border-radius: 20px;
+    filter: brightness(100%); 
+}
+
+#texto{
+    padding: 30px 0px 0px;
+    padding-right: 70px ;
+}
+
+#textocolegio{
+    text-align: justify;
+}
+
+#perfil_pricipal{
+  display: flex;
+}
+
+#perfil_foto{
+  margin: 2px;
+  width: 25%;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#perfil_conteudo{
+  margin: 2px;
+  width: 25%;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#perfil_comentarios{
+  margin: 2px;
+  width: 50%;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
