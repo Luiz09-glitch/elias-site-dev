@@ -1,61 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicical - Colegio Elias Abrahão</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Colégio Estadual Cívico-Militar Elias Abrahão, em Quatro Barras - PR. Ensino Fundamental, Médio e Profissional." />
+  <title>Página Inicial - Colégio Elias Abrahão</title>
+  <link rel="icon" href="logocivico.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>
-        <div id="container_header">
-            <div id="esq_header">
-                <img id="logo" src="logocivico.png"> 
-            </div>
-            <div id="dir_header">
-                <h1>Colégio Estadual Cívico Mililar Elias Abrahão</h1>
-                <h2>Ensino Fundamental, Médio e Profissional</h2>
-            </div>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="">Cursos</a></li>
-            <li><a href="">Disciplinas</a></li>
-            <li><a href="">Professores</a></li>
-            <li><a href="">Alunos</a></li>
-            <li><a href="">Contato</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div id="principalindex">
-            <div id="slogan">
-                <h2 id="fraseslogan">
-                    Compromisso, coragem e caráter — o futuro começa aqui.
-                </h2>
-            </div>
-            <div id="duascolunas">
-                <div id="imagem">
-                    <img id="imgcolegio" src="colegio.jpg">
-                </div>
-                <div id="texto">
-                    <p id ="textocolegio">
-                        A Escola Elias Abrahao C M, localizada na Rua Angelo                       Chilante, 15, em Quatro Barras - PR, é uma referência
-                       em qualidade educacional na região do Jardim Menino 
-                       Deus. Como uma escola pública estadual, oferece ensino
-                        de Educação Fundamental e Ensino Médio, com opções
-                        diurnas e noturnas. A acessibilidade é uma prioridade,
-                         com infraestrutura que inclui elevador, corredores 
-                         largos, e banheiros adaptados para alunos com deficiência ou mobilidade reduzida.
-                        A escola conta com diversas instalações               
-                        , como uma biblioteca equipada com sala de leitura, quadra de esportes coberta, laboratório de ciências, e um refeitório que oferece alimentação escolar. O ambiente favorece a tecnologia, permitindo acesso à internet e laboratórios de informática, promovendo aprendizado colaborativo. Com foco em sustentabilidade, a escola possui uma área verde e práticas de separação de resíduos. Além disso, os alunos têm acesso a uma variedade de materiais didáticos e recursos para atividades culturais e artísticas, essenciais para uma educação abrangente e inclusiva.
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
-                    </p>
-                </div>
-            </div>
+  <header>
+    <div id="container_header">
+      <a id="esq_header" href="index.html">
+        <img id="logo" src="logocivico.png" alt="Brasão do Colégio Cívico-Militar do Paraná" width="270" height="270" />
+      </a>
+      <div id="dir_header">
+        <p class="sobretitulo">Colégio Cívico-Militar do Paraná</p>
+        <h1>Colégio Estadual Cívico-Militar Elias Abrahão</h1>
+        <p class="subtitulo">Ensino Fundamental, Médio e Profissional</p>
+      </div>
+    </div>
+  </header>
 
+  <nav aria-label="Principal">
+    <ul>
+      <li><a href="index.html" aria-current="page">Início</a></li>
+      <li><a href="#">Cursos</a></li>
+      <li><a href="#">Alunos</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">História</a></li>
+    </ul>
+  </nav>
+
+  <main id="conteudo">
+    <section id="slogan">
+      <p class="rotulo">Quatro Barras · Paraná</p>
+      <h2 id="fraseslogan">
+        Compromisso, coragem e caráter — o futuro começa aqui.
+      </h2>
+      <div class="divisa" aria-hidden="true"><span></span></div>
+      <a class="botao" href="#sobre">Conheça o colégio</a>
+    </section>
+
+    <ul class="faixa_info" aria-label="Informações rápidas">
+      <li>
+        <span class="faixa_titulo">Níveis de ensino</span>Fundamental, Médio e
+        Técnico
+      </li>
+      <li><span class="faixa_titulo">Turnos</span>Diurno (Manhã e tarde)</li>
+      <li><span class="faixa_titulo">Localização</span>Quatro Barras - PR</li>
+    </ul>
+
+    <section id="sobre">
+      <div id="duascolunas">
+        <div id="imagem">
+          <figure class="moldura">
+            <img id="imgcolegio" src="colegio.jpg"
+              alt="Fachada do Colégio Estadual Elias Abrahão, com paredes amarelas e entrada coberta" width="320"
+              height="320" />
+            <figcaption>Rua Angelo Chilante, 15 — Quatro Barras</figcaption>
+          </figure>
         </div>
-    </main>
-    <footer>Desenvolvido por Walker Schwartz- Tecnico em Desenvolvimento de Sistema</footer>
+        <div id="texto">
+          <p class="rotulo">Nossa escola</p>
+          <h2>Sobre o colégio</h2>
+          <div id="textocolegio">
+            <p>
+              A Escola Elias Abrahão C M, localizada na Rua Angelo Chilante,
+              15, em Quatro Barras - PR, é uma referência em qualidade
+              educacional na região do Jardim Menino Deus. Como uma escola
+              pública estadual, oferece ensino de Educação Fundamental e
+              Ensino Médio.
+            </p>
+            <p>
+              A escola conta com diversas instalações, como uma biblioteca
+              equipada com sala de leitura, quadra de esportes coberta,
+              laboratório de ciências, e um refeitório que oferece alimentação
+              escolar. O ambiente favorece a tecnologia, permitindo acesso à
+              internet e laboratórios de informática, promovendo aprendizado
+              colaborativo. Com foco em sustentabilidade, a escola possui uma
+              área verde e práticas de separação de resíduos. Além disso, os
+              alunos têm acesso a uma variedade de materiais didáticos e
+              recursos para atividades culturais e artísticas, essenciais para
+              uma educação abrangente e inclusiva.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="estrutura">
+      <p class="rotulo">Infraestrutura</p>
+      <h2>Nossa estrutura</h2>
+      <ul class="cartoes">
+        <li class="cartao">
+          <h3>Acessibilidade</h3>
+          <p>Elevador, corredores largos e banheiros adaptados.</p>
+        </li>
+        <li class="cartao">
+          <h3>Biblioteca</h3>
+          <p>Equipada com sala de leitura.</p>
+        </li>
+        <li class="cartao">
+          <h3>Quadra coberta</h3>
+          <p>Espaço para esportes em qualquer tempo.</p>
+        </li>
+        <li class="cartao">
+          <h3>Laboratório de ciências</h3>
+          <p>Para aulas práticas e experimentos.</p>
+        </li>
+        <li class="cartao">
+          <h3>Informática</h3>
+          <p>Laboratórios de informática e acesso à internet.</p>
+        </li>
+        <li class="cartao">
+          <h3>Refeitório</h3>
+          <p>Com alimentação escolar.</p>
+        </li>
+        <li class="cartao">
+          <h3>Sustentabilidade</h3>
+          <p>Área verde (horta).</p>
+        </li>
+        <li class="cartao">
+          <h3>Cultura e artes</h3>
+          <p>Materiais e recursos para atividades culturais e artísticas.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rodape_conteudo">
+      <img class="rodape_logo" src="logocivico.png" alt="" width="270" height="270" />
+      <div>
+        <p class="rodape_nome">
+          Colégio Estadual Cívico-Militar Elias Abrahão
+        </p>
+        <p>
+          Rua Angelo Chilante, 15 — Jardim Menino Deus, Quatro Barras - PR
+        </p>
+      </div>
+    </div>
+    <p class="rodape_credito">
+      Desenvolvido por Alunos do Técnico em Desenvolvimento de Sistemas
+    </p>
+  </footer>
 </body>
+
 </html>
